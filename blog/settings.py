@@ -182,12 +182,8 @@ CONSTANCE_CONFIG = {
 
     'SOCIAL_NETWORKS_FACEBOOK_URL': ('#', ('Social Networks - Facebook'), str),
     'SOCIAL_NETWORKS_TWITTER_URL': ('#', ('Social Networks - Twitter'), str),
-    'SOCIAL_NETWORKS_SNAPCHAT_URL': ('#', ('Social Networks - Snapchat'), str),
     'SOCIAL_NETWORKS_INSTAGRAM_URL': ('#', ('Social Networks - Instagram'), str),
-    'SOCIAL_NETWORKS_MEDIUM_URL': ('#', ('Social Networks - Medium'), str),
-    'SOCIAL_NETWORKS_TELEGRAM_URL': ('#', ('Social Networks - Telegram'), str),
     'SOCIAL_NETWORKS_GITHUB_URL': ('#', ('Social Networks - Github'), str),
-    'SOCIAL_NETWORKS_GITLAB_URL': ('#', ('Social Networks - Gitlab'), str),
 }
 
 CONSTANCE_CONFIG_FIELDSETS = {
@@ -206,12 +202,8 @@ CONSTANCE_CONFIG_FIELDSETS = {
     '"Social Networks" Options': (
         'SOCIAL_NETWORKS_FACEBOOK_URL',
         'SOCIAL_NETWORKS_TWITTER_URL',
-        'SOCIAL_NETWORKS_SNAPCHAT_URL',
         'SOCIAL_NETWORKS_INSTAGRAM_URL',
-        'SOCIAL_NETWORKS_MEDIUM_URL',
-        'SOCIAL_NETWORKS_TELEGRAM_URL',
         'SOCIAL_NETWORKS_GITHUB_URL',
-        'SOCIAL_NETWORKS_GITLAB_URL',
     ),
 }
 # CONSTANCE Settings
@@ -225,3 +217,5 @@ LOGOUT_REDIRECT_URL = 'content:index'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
