@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'constance.backends.database',
     'ckeditor',
     'ckeditor_uploader',
-    'core.apps.CoreConfig'
+    'content.apps.ContentConfig'
 ]
 
 MIDDLEWARE = [
@@ -71,7 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'core.context_processors.show_system_content',
+                'content.context_processors.show_system_content',
             ],
         },
     },

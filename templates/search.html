@@ -1,5 +1,3 @@
-
-   
 {% extends 'base.html' %}
 
 {% block content %}
@@ -10,10 +8,10 @@
         <div>
             {% for blog in blogs %}
                 <article>
-                    <a href="{% url 'core:blog_single' blog.slug %}" title="{{ blog.title }}">
+                    <a href="{% url 'content:blog_single' blog.slug %}" title="{{ blog.title }}">
                         <h3>{{ blog.title }}</h3>
-                    </a>                  
-                    <p>{{ blog.core | safe | truncatewords_html:10 }}</p>
+                    </a>                    
+                    <p>{{ blog.content | safe | truncatewords_html:10 }}</p>
                 </article>
                 <hr>
             {% endfor %}

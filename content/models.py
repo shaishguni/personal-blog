@@ -1,18 +1,22 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+
 from ckeditor_uploader.fields import RichTextUploadingField
 
+
 class BlogCategory(models.Model):
-    title = models.CharField(max_length=256,
-    verbose_name=_('Title: '),
-    unique=True,
-    blank = False,
-    null = False,  
+    title = models.CharField(
+        max_length=256,
+        verbose_name=_('Title :'),
+        unique=True,
+        blank=False,
+        null=False
     )
+
     class Meta:
         verbose_name = _('Blog Category')
-        verbose_name_plural = _('Blog Categories.')
-    
+        verbose_name_plural = _('Blog Categories')
+
     def __str__(self):
         return self.title
 
@@ -205,3 +209,4 @@ class Skill(models.Model):
 
     def __str__(self):
         return self.title
+

@@ -6,7 +6,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    path('', include(('core.urls', 'core'), namespace='core')),
+    path('', include(('content.urls', 'content'), namespace='content')),
     path('accounts/', include("django.contrib.auth.urls"))
 ]
 
