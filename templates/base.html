@@ -60,8 +60,8 @@
 
             <!-- Search -->
             <section id="search" class="alt">
-                <form method="GET" action="{% url 'content:search' %}">
-                    <input type="text" name="query" id="query" placeholder="{% translate 'Search' %}" required>
+                <form method="GET" action="{% url 'content:search' %}" autocomplete="off">
+                    <input type="text" name="query"  id="query" placeholder="{% translate 'Search' %}" required>
                 </form>
             </section>
             <!-- /Search -->
