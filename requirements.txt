@@ -1,0 +1,16 @@
+dj-database-url
+Django
+django-ckeditor
+django-constance
+django-js-asset
+django-picklefield
+gunicorn
+Pillow
+psycopg2-binary
+python-memcached
+pytz
+six
+sqlparse
+typing
+whitenoise
+django-heroku
