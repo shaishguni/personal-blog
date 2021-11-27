@@ -23,7 +23,7 @@ def sercret_key():
 
 SECRET_KEY = sercret_key()	
 # SECURITY WARNING: don't run with debug turned on in production!	
-DEBUG = True	
+DEBUG = False	
 
 ALLOWED_HOSTS = ['127.0.0.1','shaishguni-blog.herokuapp.com']	
 
@@ -229,3 +229,6 @@ EMAIL_HOST_PASSWORD = "password"
 
 # some works for whitenoise	
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 	
+
+SECURE_HSTS_SECONDS = 60 * 60 * 24 * 365
+
