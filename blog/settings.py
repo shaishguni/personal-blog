@@ -228,7 +228,7 @@ EMAIL_HOST_PASSWORD = "password"
 
 
 # some works for whitenoise	
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 	
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 	
 
 SECURE_HSTS_SECONDS = 60 * 60 * 24 * 365
 
